@@ -32,12 +32,6 @@ public class Card extends BaseEntity {
     private String panHash;
 
     public void setPanHash(String pan) {
-        this.panHash = generateHash(pan);
+        this.panHash = HashUtils.generateSha256Hash(pan);
     }
-
-    private String generateHash(String pan) {
-        return HashUtils.generateSha256Hash(pan);
-    }
-
-
 }
