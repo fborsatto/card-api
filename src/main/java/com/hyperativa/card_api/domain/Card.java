@@ -1,6 +1,7 @@
 package com.hyperativa.card_api.domain;
 
 import com.hyperativa.card_api.infrastructure.security.EncryptionConverter;
+import com.hyperativa.card_api.infrastructure.security.HashUtils;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -35,21 +36,7 @@ public class Card extends BaseEntity {
     }
 
     private String generateHash(String pan) {
-        try {
-            MessageDigest digest = MessageDigest.getInstance("SHA-256");
-            byte[] hash = digest.digest(pan.getBytes(StandardCharsets.UTF_8));
-            StringBuilder hexString = new StringBuilder();
-            for (byte b : hash) {
-                String hex = Integer.toHexString(0xff & b);
-                if (hex.length() == 1) {
-                    hexString.append('0');
-                }
-                hexString.append(hex);
-            }
-            return hexString.toString();
-        } catch (Exception e) {
-            throw new RuntimeException("Erro ao gerar hash do PAN", e);
-        }
+        return HashUtils.generateSha256Hash(pan);
     }
 
 

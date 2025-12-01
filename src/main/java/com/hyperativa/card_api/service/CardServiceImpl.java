@@ -5,6 +5,7 @@ import com.hyperativa.card_api.domain.exception.DuplicateCardException;
 import com.hyperativa.card_api.domain.exception.NotFoundException;
 import com.hyperativa.card_api.dto.CardResponseDTO;
 import com.hyperativa.card_api.infrastructure.repository.CardRepository;
+import com.hyperativa.card_api.service.validation.CardValidationService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

@@ -5,6 +5,7 @@ import com.hyperativa.card_api.domain.exception.DuplicateCardException;
 import com.hyperativa.card_api.domain.exception.NotFoundException;
 import com.hyperativa.card_api.dto.CardResponseDTO;
 import com.hyperativa.card_api.infrastructure.repository.CardRepository;
+import com.hyperativa.card_api.service.validation.CardValidationService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

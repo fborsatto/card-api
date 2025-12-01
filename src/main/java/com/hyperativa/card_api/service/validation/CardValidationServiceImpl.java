@@ -1,7 +1,6 @@
-package com.hyperativa.card_api.service;
+package com.hyperativa.card_api.service.validation;
 
 import com.hyperativa.card_api.domain.exception.InvalidPanException;
-import com.hyperativa.card_api.service.validation.VisaCardValidationStrategy;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
