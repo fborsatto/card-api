@@ -56,7 +56,7 @@ json { "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...", "type": "Bearer", "ex
 
 curl -X POST [https://localhost:8443/api/v1/auth/login](http://localhost:8080/api/v1/auth/login)
 -H "Content-Type: application/json"
--d '{"login":"admin","password":"admin123"}'
+-d '{"login":"admin","password":"admin"}'
 
 ###  Endpoints de Cartões
 
