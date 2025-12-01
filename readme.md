@@ -30,7 +30,7 @@ API REST desafio Hyperativa
 - Maven 3.6+ (opcional, se não usar Docker)
 
 ### 1. Clone o Repositório
- git clone https://github.com/fborsatto/card-api cd card-api
+ git clone https://github.com/fborsatto/card-api card-api
 
 ### 2. Execute Docker Compose para subir MySql
 docker-compose up
