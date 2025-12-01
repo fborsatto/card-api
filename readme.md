@@ -26,8 +26,8 @@ API REST desafio Hyperativa
 ### Pré-requisitos
 
 - Docker e Docker Compose instalados
-- Java 21+ (opcional, se não usar Docker)
-- Maven 3.6+ (opcional, se não usar Docker)
+- Java 21+ 
+- Maven 3.6+ 
 
 ### 1. Clone o Repositório
  git clone https://github.com/fborsatto/card-api card-api
