@@ -8,8 +8,6 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import java.nio.charset.StandardCharsets;
-import java.security.MessageDigest;
 import java.util.UUID;
 
 @Entity
